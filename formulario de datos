@@ -1,0 +1,84 @@
+<!doctype>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="micss.css">
+	<script src="jquery-1.6.3.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(function(){
+			$("body").hide().fadeIn(5000);
+		})
+</script>
+
+</head>
+
+
+
+<div align="center">
+<h1>Formulario de datos </h1>
+
+
+<body>
+<h1>Nombre(s): <input type="text" id="texto1"></h1>
+<h1>Apellido(s): <input type="text" id="texto2"></h1>
+<h1>Dirección: <input type="text" id="texto3"></h1>
+<h1>Email: <input type="text" id="texto4"></h1>
+<h1>Edad: <input type="text" id="texto5"></h1>
+<h1>Comentario: <input type="text" id="texto6"></h1>
+<br>
+
+<input type="button" id="boton1" value="enviar" onclick="obtenerDatos()"> 
+
+
+
+<script type="text/javascript">
+
+var btn1 = document.getElementById("boton1");
+
+btn1.style.width = "100px";
+btn1.style.height = "50px";
+btn1.style.backgroundColor="green";
+</script>
+
+<script type="text/javascript">
+
+function obtenerDatos(){
+
+var txtMostrar = document.getElementById("texto");
+
+var txtNombre = document.getElementById("texto1").value;
+var txtApellido = document.getElementById("texto2").value;
+var txtDireccion = document.getElementById("texto3").value;
+var txtEmail = document.getElementById("texto4").value;
+var txtEdad = document.getElementById("texto5").value;
+var txtComentario = document.getElementById("texto6").value;
+
+document.write("Su nombre es: "+ txtNombre + "<br>");
+document.write("Su apellido es: " + txtApellido + "<br>");
+document.write("Su dirección es: " + txtDireccion + "<br>");
+document.write("Su Email es:" + txtEmail + "<br>");
+document.write("Su Edad es:" + txtEdad + "<br>");
+document.write("Su Comentario es:" + txtComentario + "<br>");
+
+
+
+
+}
+ 
+ 
+</script>
+
+<script type="text/javascript">
+
+function imprimirValores(){
+
+ 	
+}
+</script>
+
+
+</body>
+</html>
